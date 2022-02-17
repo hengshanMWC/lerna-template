@@ -1,7 +1,4 @@
 {
-  "packages": [
-    "packages/*"
-  ],
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
@@ -13,7 +10,7 @@
     "publish": {
       "npmClient": "npm",
       "allowBranch": [
-        "main"
+        "canary"
       ]
     }
   }
