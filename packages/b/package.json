@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mwc/a": "^1.0.1",
-    "cross-env": "5.0.5"
+    "@mwc/a": "^1.0.1"
   }
 }
