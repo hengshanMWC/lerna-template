@@ -1,5 +1,5 @@
 {
-  "name": "svelte-popup",
+  "name": "@svelte/popup",
   "version": "0.0.3",
   "type": "module",
   "main": "/dist/sveltePopup.cjs.min.js",
