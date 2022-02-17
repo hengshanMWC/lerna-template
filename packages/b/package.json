@@ -1,15 +1,29 @@
 {
-  "name": "@mwc/b",
-  "version": "1.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "name": "@test/b",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "mawencan <1044926436@qq.com>",
+  "homepage": "https://github.com/hengshanMWC/lerna-template#readme",
   "license": "ISC",
-  "dependencies": {
-    "@mwc/a": "^1.0.2"
+  "main": "lib/b.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://localhost:4873/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hengshanMWC/lerna-template.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/hengshanMWC/lerna-template/issues"
   }
 }
