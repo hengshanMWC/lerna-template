@@ -1,7 +1,6 @@
 {
   "name": "root",
   "private": true,
-  "version": "independent",
   "workspaces": ["packages/*"],
   "license": "MIT",
   "devDependencies": {
