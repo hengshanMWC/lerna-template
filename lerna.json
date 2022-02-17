@@ -4,5 +4,14 @@
   ],
   "version": "independent",
   "npmClient": "yarn",
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "command": {
+    "version": {
+      "ignoreChanges": ["*.md", "**/*.test.ts", "**/*.spec.ts"],
+      "message": "chore(release): publish"
+    },
+    "bootstrap": {
+      "npmClientArgs": ["--no-package-lock", "--no-ci"]
+    }
+  }
 }
