@@ -1,6 +1,6 @@
 {
   "name": "@mwc/b",
-  "version": "1.0.1-alpha.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mwc/a": "^1.0.1"
+    "@mwc/a": "^1.0.2"
   }
 }
