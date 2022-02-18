@@ -6,6 +6,13 @@
   ],
   "license": "MIT",
   "type": "module",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "npm-run-all build:a build:b build:c",
+    "build:a": "cd packages/a && yarn build",
+    "build:b": "cd packages/b && yarn build",
+    "build:c": "cd packages/c && yarn build"
+  },
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@rollup/plugin-babel": "^5.3.0",
@@ -15,6 +22,7 @@
     "@rollup/plugin-typescript": "^8.3.0",
     "camelcase": "^6.3.0",
     "lerna": "^4.0.0",
+    "npm-run-all": "^4.1.5",
     "rollup": "^2.67.3",
     "rollup-plugin-typescript2": "^0.31.2",
     "scripty": "^2.0.0",

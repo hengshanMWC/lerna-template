@@ -4,8 +4,8 @@ import camelcase from 'camelcase'
 // import json from '@rollup/plugin-json';
 import { minify } from 'terser'
 import zlib from 'zlib'
-import { nodeResolve } from '@rollup/plugin-node-resolve'
-import commonjs from '@rollup/plugin-commonjs'
+import { nodeResolve } from '@rollup/plugin-node-resolve' // 解析 node_modules 中的模块
+import commonjs from '@rollup/plugin-commonjs' // 转换 CJS -> ESM, 通常配合@rollup/plugin-node-resolve插件使用
 import { babel } from '@rollup/plugin-babel'
 // import typescript from 'rollup-plugin-typescript2'
 import fs from 'fs'
