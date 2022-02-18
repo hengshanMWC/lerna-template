@@ -25,7 +25,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/hengshanMWC/lerna-template/issues"
+    "url": "https://github.com/hengshanMWC/lerna-template/issues",
+    "build": "node build.config.js"
   },
   "dependencies": {
     "@test/a": "^1.0.3",

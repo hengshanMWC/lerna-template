@@ -21,7 +21,8 @@
     "url": "git+https://github.com/hengshanMWC/lerna-template.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "node build.config.js"
   },
   "bugs": {
     "url": "https://github.com/hengshanMWC/lerna-template/issues"

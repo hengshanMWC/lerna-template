@@ -1,6 +1,6 @@
-import b from '@test/b'
+import { b } from '@test/b'
 
-export default class Num {
+export class Num {
   static id = 0
   constructor (num) {
     Num.id++

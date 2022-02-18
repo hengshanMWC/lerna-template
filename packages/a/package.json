@@ -5,13 +5,14 @@
   "author": "mawencan <1044926436@qq.com>",
   "homepage": "https://github.com/hengshanMWC/lerna-template#readme",
   "license": "MIT",
-  "module": "lib/index.js",
+  "module": "dist/index.js",
+  "type": "module",
   "directories": {
-    "lib": "lib",
+    "lib": "dist",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
     "registry": "http://localhost:4873/"
@@ -21,7 +22,11 @@
     "url": "git+https://github.com/hengshanMWC/lerna-template.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "node build.config.js"
+  },
+  "scripty": {
+    "path": "../../scripts/packages"
   },
   "bugs": {
     "url": "https://github.com/hengshanMWC/lerna-template/issues"
