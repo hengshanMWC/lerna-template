@@ -9,7 +9,7 @@
   "module": "dist/a.esm.min.js",
   "unpkg": "dist/a.min.js",
   "type": "module",
-  "types": "src/index.ts",
+  "types": "src",
   "directories": {
     "lib": "dist",
     "test": "__tests__"
