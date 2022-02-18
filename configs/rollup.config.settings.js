@@ -1,16 +1,17 @@
 import { rollup } from 'rollup'
 import validateNpmPackageName from 'validate-npm-package-name'
 import camelcase from 'camelcase'
-// import json from '@rollup/plugin-json';
+import json from '@rollup/plugin-json';
 import { minify } from 'terser'
 import zlib from 'zlib'
 import { nodeResolve } from '@rollup/plugin-node-resolve' // 解析 node_modules 中的模块
 import commonjs from '@rollup/plugin-commonjs' // 转换 CJS -> ESM, 通常配合@rollup/plugin-node-resolve插件使用
 import { babel } from '@rollup/plugin-babel'
-// import typescript from 'rollup-plugin-typescript2'
+import ts from 'rollup-plugin-typescript2'
 import fs from 'fs'
 import path from 'path'
 const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'))
+
 let moduleName = pkg.name
 // 检查是否是合法的 npm 包名
 if (!validateNpmPackageName(moduleName)) {
@@ -51,8 +52,8 @@ const genConfig  = (builds, key) => {
           ]
         ],
       }),
-      // json(),
-      // typescript()
+      json(),
+      ts()
     ].concat(plugins),
     external: [].concat(external),
     // 监听

@@ -1,8 +1,20 @@
-47 warn complete Waiting for 1 child process to exit. CTRL-C to exit immediately.
-48 error Error: Command failed with exit code 128: git tag @test/b@1.0.2 -m @test/b@1.0.2
-48 error fatal: tag '@test/b@1.0.2' already exists
-48 error     at makeError (/Applications/code/github/my/lerna-template/node_modules/execa/lib/error.js:60:11)
-48 error     at handlePromise (/Applications/code/github/my/lerna-template/node_modules/execa/index.js:118:26)
-48 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-48 error     at async Promise.all (index 0)
-48 error     at async Promise.all (index 0)
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   dev: true,
+0 silly argv   D: true,
+0 silly argv   scope: '@test/a',
+0 silly argv   globs: [],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'lerna',
+0 silly argv   pkg: '@types/lodash-es'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /Applications/code/github/my/lerna-template
+3 info versioning independent
+4 error FetchError: request to http://localhost:4873/@types%2flodash-es failed, reason: connect ECONNREFUSED 127.0.0.1:4873
+4 error     at ClientRequest.<anonymous> (/Applications/code/github/my/lerna-template/node_modules/minipass-fetch/lib/index.js:110:14)
+4 error     at ClientRequest.emit (node:events:390:28)
+4 error     at Socket.socketErrorListener (node:_http_client:447:9)
+4 error     at Socket.emit (node:events:402:35)
+4 error     at emitErrorNT (node:internal/streams/destroy:157:8)
+4 error     at emitErrorCloseNT (node:internal/streams/destroy:122:3)

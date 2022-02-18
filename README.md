@@ -1,1 +1,1 @@
-chmod -R u+x scripts
+npm install -g verdaccio

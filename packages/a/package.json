@@ -9,6 +9,7 @@
   "module": "dist/a.esm.min.js",
   "unpkg": "dist/a.min.js",
   "type": "module",
+  "types": "src/index.ts",
   "directories": {
     "lib": "dist",
     "test": "__tests__"
@@ -25,7 +26,7 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "build": "node build.config.js"
+    "build": "node rollup.config.js"
   },
   "scripty": {
     "path": "../../scripts/packages"
@@ -36,5 +37,8 @@
   "gitHead": "75f8c2a9d733dd05108994ba87992532cd8eda15",
   "dependencies": {
     "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.6"
   }
 }
