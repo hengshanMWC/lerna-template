@@ -1,5 +1,5 @@
 'use strict';
-const a = require('a')
+const a = require('@test/a')
 module.exports = b;
 console.log(a)
 function b() {
