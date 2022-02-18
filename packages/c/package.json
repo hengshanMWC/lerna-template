@@ -1,6 +1,6 @@
 {
   "name": "@test/c",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "> TODO: description",
   "author": "mawencan <1044926436@qq.com>",
   "homepage": "https://github.com/hengshanMWC/lerna-template#readme",
@@ -31,9 +31,8 @@
     "build": "node build.config.js"
   },
   "dependencies": {
-    "@test/a": "^1.0.3",
-    "@test/b": "^1.0.6"
+    "@test/a": "^1.0.4",
+    "@test/b": "^1.1.0"
   },
-  "gitHead": "75f8c2a9d733dd05108994ba87992532cd8eda15",
-  "devDependencies": {}
+  "gitHead": "75f8c2a9d733dd05108994ba87992532cd8eda15"
 }

@@ -1,6 +1,6 @@
 {
   "name": "@test/a",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "> TODO: description",
   "author": "mawencan <1044926436@qq.com>",
   "homepage": "https://github.com/hengshanMWC/lerna-template#readme",
@@ -35,6 +35,5 @@
   "gitHead": "75f8c2a9d733dd05108994ba87992532cd8eda15",
   "dependencies": {
     "lodash-es": "^4.17.21"
-  },
-  "devDependencies": {}
+  }
 }
