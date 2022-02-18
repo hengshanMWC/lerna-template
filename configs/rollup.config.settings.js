@@ -60,7 +60,17 @@ const genConfig  = key => {
     plugins: [
       nodeResolve(),
       commonjs(),
-      babel({ babelHelpers: 'bundled' })
+      babel({
+        babelHelpers: 'bundled',
+        presets: [
+          [
+            '@babel/preset-env',
+            {
+              modules: false,
+            },
+          ]
+        ],
+      }),
       // json(),
       // typescript()
     ].concat(plugins),
