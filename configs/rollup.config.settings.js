@@ -27,27 +27,7 @@ moduleName = camelcase(moduleName)
 // 头信息
 const banner = '// * Released under the MIT License.\n'
 
-// rollup 配置
-const builds = {
-  'es': {
-    entry: 'src/index.js',
-    // 当文件名包含 .min 时将会自动启用 terser 进行压缩
-    // dest: `dist/${moduleName}.esm.min.js`,
-    dest: `dist/${moduleName}.esm.js`,
-    format: 'es'
-  },
-  'cjs': {
-    entry: 'src/index.js',
-    // 当文件名包含 .min 时将会自动启用 terser 进行压缩
-    // dest: `dist/${moduleName}.cjs.min.js`,
-    dest: `dist/${moduleName}.cjs.js`,
-    format: 'cjs'
-  }
-}
-
-
-
-const genConfig  = key => {
+const genConfig  = (builds, key) => {
   const {entry, dest, format, plugins = [], external = [], name} = builds[key]
   const config = {
     input: entry,
@@ -87,15 +67,9 @@ const genConfig  = key => {
 
 // 以下代码取自 vue 官方仓库
 // 通过 rollup api 打包所有 builds 中的配置
-const getAllBuilds = Object.keys(builds).map(genConfig)
 
 if (!fs.existsSync('dist')) {
   fs.mkdirSync('dist')
-}
-
-
-export default function () {
-  build(getAllBuilds)
 }
 
 function build (builds) {
@@ -167,4 +141,11 @@ function logError (e) {
 
 function blue (str) {
   return '\x1b[1m\x1b[34m' + str + '\x1b[39m\x1b[22m'
+}
+export default function (fn) {
+  const builds = fn(moduleName)
+  const getAllBuilds = Object.keys(builds).map(function (key) {
+    return genConfig(builds, key)
+  })
+  build(getAllBuilds)
 }

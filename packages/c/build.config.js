@@ -1,2 +1,2 @@
-import build from '../../configs/rollup.config.settings.js'
+import build from '../../scripts/build.js'
 build()
