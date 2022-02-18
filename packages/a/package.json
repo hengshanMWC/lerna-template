@@ -4,7 +4,7 @@
   "description": "> TODO: description",
   "author": "mawencan <1044926436@qq.com>",
   "homepage": "https://github.com/hengshanMWC/lerna-template#readme",
-  "license": "ISC",
+  "license": "MIT",
   "main": "lib/a.js",
   "directories": {
     "lib": "lib",
