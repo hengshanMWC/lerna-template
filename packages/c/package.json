@@ -1,6 +1,6 @@
 {
   "name": "@test/c",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "> TODO: description",
   "author": "mawencan <1044926436@qq.com>",
   "homepage": "https://github.com/hengshanMWC/lerna-template#readme",
@@ -27,8 +27,8 @@
     "url": "https://github.com/hengshanMWC/lerna-template/issues"
   },
   "dependencies": {
-    "@test/a": "^1.0.1",
-    "@test/b": "^1.0.3"
+    "@test/a": "^1.0.2",
+    "@test/b": "^1.0.4"
   },
   "gitHead": "814476a5c60d23cdce83f4181ee4f8b4d9cdefa9"
 }
