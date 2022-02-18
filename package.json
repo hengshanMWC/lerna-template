@@ -1,9 +1,18 @@
 {
   "name": "root",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@rollup/plugin-json": "^4.1.0",
+    "camelcase": "^6.3.0",
+    "lerna": "^4.0.0",
+    "rollup": "^2.67.3",
+    "terser": "^5.10.0",
+    "typescript": "^4.5.5",
+    "validate-npm-package-name": "^3.0.0",
+    "zlib": "^1.0.5"
   }
 }

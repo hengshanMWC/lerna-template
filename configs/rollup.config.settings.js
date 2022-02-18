@@ -5,7 +5,6 @@ import json from '@rollup/plugin-json';
 import { minify } from 'terser'
 import zlib from 'zlib'
 import typescript from '@rollup/plugin-typescript'
-import tscompile from 'typescript'
 import pkg from '../package.json'
 
 let moduleName = pkg.name
@@ -54,9 +53,7 @@ const genConfig  = key => {
     },
     plugins: [
       json(),
-      typescript({
-        typescript: tscompile,
-      })
+      typescript()
     ].concat(plugins),
     external: [].concat(external),
     // 监听
