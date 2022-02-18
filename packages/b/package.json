@@ -5,7 +5,7 @@
   "author": "mawencan <1044926436@qq.com>",
   "homepage": "https://github.com/hengshanMWC/lerna-template#readme",
   "license": "MIT",
-  "main": "lib/b.js",
+  "module": "lib/index.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -29,5 +29,6 @@
   "dependencies": {
     "@test/a": "^1.0.3"
   },
-  "gitHead": "75f8c2a9d733dd05108994ba87992532cd8eda15"
+  "gitHead": "75f8c2a9d733dd05108994ba87992532cd8eda15",
+  "devDependencies": {}
 }
