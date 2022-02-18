@@ -27,7 +27,6 @@
     "url": "https://github.com/hengshanMWC/lerna-template/issues"
   },
   "dependencies": {
-    "@test/a": "^1.0.1",
-    "@test/c": "^1.0.1"
+    "@test/a": "^1.0.1"
   }
 }

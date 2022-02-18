@@ -1,0 +1,8 @@
+47 warn complete Waiting for 1 child process to exit. CTRL-C to exit immediately.
+48 error Error: Command failed with exit code 128: git tag @test/b@1.0.2 -m @test/b@1.0.2
+48 error fatal: tag '@test/b@1.0.2' already exists
+48 error     at makeError (/Applications/code/github/my/lerna-template/node_modules/execa/lib/error.js:60:11)
+48 error     at handlePromise (/Applications/code/github/my/lerna-template/node_modules/execa/index.js:118:26)
+48 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+48 error     at async Promise.all (index 0)
+48 error     at async Promise.all (index 0)
