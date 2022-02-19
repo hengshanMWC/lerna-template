@@ -135,6 +135,7 @@ lerna add @test/b --scope=@test/c
 ```
 // @test/b删除掉@test/c依赖
 lerna exec --scope=@test/b yarn remove @test/c
+yarn add -D -W jest @types/jest babel-jest ts-jest
 ```
 
 # 参考
