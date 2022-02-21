@@ -8,7 +8,6 @@
   "main": "dist/a.cjs.min.js",
   "module": "dist/a.esm.min.js",
   "unpkg": "dist/a.min.js",
-  "type": "module",
   "types": "src",
   "directories": {
     "lib": "dist",
@@ -27,9 +26,6 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "node rollup.config.js"
-  },
-  "scripty": {
-    "path": "../../scripts/packages"
   },
   "bugs": {
     "url": "https://github.com/hengshanMWC/lerna-template/issues"

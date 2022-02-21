@@ -1,2 +1,2 @@
-import build from '../../scripts/build.js'
+const build = require('../../scripts/build.js')
 build()

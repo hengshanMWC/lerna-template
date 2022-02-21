@@ -5,7 +5,6 @@
   "author": "mawencan <1044926436@qq.com>",
   "homepage": "https://github.com/hengshanMWC/lerna-template#readme",
   "license": "MIT",
-  "type": "module",
   "main": "dist/c.cjs.min.js",
   "module": "dist/c.esm.min.js",
   "unpkg": "dist/c.min.js",

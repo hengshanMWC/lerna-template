@@ -3,7 +3,7 @@ import { b } from "@test/b";
 
 export class Num {
   static id = 0;
-  fn: (num2: number) => number;
+  private fn: (num2: number) => number;
   constructor(num: number) {
     Num.id = a(1, Num.id);
     this.fn = b(num);

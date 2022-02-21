@@ -1,15 +1,15 @@
-import { rollup } from 'rollup'
-import validateNpmPackageName from 'validate-npm-package-name'
-import camelcase from 'camelcase'
-import json from '@rollup/plugin-json';
-import { minify } from 'terser'
-import zlib from 'zlib'
-import { nodeResolve } from '@rollup/plugin-node-resolve' // 解析 node_modules 中的模块
-import commonjs from '@rollup/plugin-commonjs' // 转换 CJS -> ESM, 通常配合@rollup/plugin-node-resolve插件使用
-import { babel } from '@rollup/plugin-babel'
-import ts from 'rollup-plugin-typescript2'
-import fs from 'fs'
-import path from 'path'
+const { rollup } = require('rollup')
+const validateNpmPackageName = require('validate-npm-package-name')
+const camelcase = require('camelcase')
+const json = require('@rollup/plugin-json')
+const { minify } = require('terser')
+const zlib = require('zlib')
+const { nodeResolve } = require('@rollup/plugin-node-resolve') // 解析 node_modules 中的模块
+const commonjs = require('@rollup/plugin-commonjs') // 转换 CJS -> ESM, 通常配合@rollup/plugin-node-resolve插件使用
+const { babel } = require('@rollup/plugin-babel')
+const ts = require('rollup-plugin-typescript2')
+const fs = require('fs')
+const path = require('path')
 const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'))
 
 let moduleName = pkg.name
@@ -43,14 +43,8 @@ const genConfig  = (builds, key) => {
       commonjs(),
       babel({
         babelHelpers: 'bundled',
-        presets: [
-          [
-            '@babel/preset-env',
-            {
-              modules: false,
-            },
-          ]
-        ],
+        exclude: '../../node_modules/**',
+        configFile: '../../babel.config.js',
       }),
       json(),
       ts()
@@ -143,7 +137,7 @@ function logError (e) {
 function blue (str) {
   return '\x1b[1m\x1b[34m' + str + '\x1b[39m\x1b[22m'
 }
-export default function (fn) {
+module.exports = function (fn) {
   const builds = fn(moduleName)
   const getAllBuilds = Object.keys(builds).map(function (key) {
     return genConfig(builds, key)

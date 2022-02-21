@@ -1,4 +1,4 @@
-import config from '../configs/rollup.config.settings.js'
+const config = require('../configs/rollup.config.settings.js')
 const entry = 'src/index.ts'
 const _fn = function (moduleName) {
   return [
@@ -40,6 +40,6 @@ const _fn = function (moduleName) {
     }
   ]
 }
-export default function build (fn = _fn) {
+module.exports = function build (fn = _fn) {
   config(fn)
 }
