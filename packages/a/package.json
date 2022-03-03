@@ -30,14 +30,5 @@
   "bugs": {
     "url": "https://github.com/hengshanMWC/lerna-template/issues"
   },
-  "gitHead": "75f8c2a9d733dd05108994ba87992532cd8eda15",
-  "dependencies": {
-    "add": "^2.0.6",
-    "easy-math.js": "^1.1.4",
-    "lodash-es": "^4.17.21",
-    "mathjs": "^10.3.0"
-  },
-  "devDependencies": {
-    "@types/lodash-es": "^4.17.6"
-  }
+  "gitHead": "75f8c2a9d733dd05108994ba87992532cd8eda15"
 }
