@@ -6,6 +6,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "pre": "npm-run-all build test:cov",
     "test:cov": "jest --coverage",
     "test": "jest",
     "build": "npm-run-all build:a build:b build:c",
