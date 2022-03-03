@@ -1,27 +1,18 @@
 module.exports = function (api) {
   api.cache(true)
-  return {
+  const options = {
     "presets": [
-      [
-        "@babel/env"
-      ],
+      "@babel/env"
     ],
     "plugins": [
-      '@babel/proposal-class-properties'
+      '@babel/proposal-class-properties',
+      '@babel/transform-runtime'
     ],
-    "ignore": [
-      "node_modules/**"
-    ],
+  }
+  return {
+    ...options,
     "env": {
-      "test": {
-        "presets": [
-          "@babel/env",
-        ],
-        "plugins": [
-          '@babel/proposal-class-properties',
-          '@babel/transform-runtime'
-        ],
-      }
+      "test": options
     }
   }
 }

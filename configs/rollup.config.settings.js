@@ -42,7 +42,7 @@ const genConfig  = (builds, key) => {
       nodeResolve(),
       commonjs(),
       babel({
-        babelHelpers: 'bundled',
+        babelHelpers: 'runtime',
         exclude: '../../node_modules/**',
         configFile: '../../babel.config.js',
       }),

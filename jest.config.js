@@ -1,12 +1,9 @@
-export default {
-  testEnvironment: "node",
-  transform: {
-    "^.+\\.tsx?$": "ts-jest"
+module.exports = {
+  "preset": "ts-jest",
+  "transform": {
+    "^.+\\.(js|jsx)$": "babel-jest"
   },
-  testMatch: [
+  "testMatch": [
     '<rootDir>/packages/**/__tests__/*.test.ts'
-  ],
-  transformIgnorePatterns: [
-    "/add/"
-  ],
+  ]
 }
