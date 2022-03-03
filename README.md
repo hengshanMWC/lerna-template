@@ -8,17 +8,18 @@ yarn jest
 
 # publish test
 
-Build local NPM source
+next, simulate the publish process
+
+## build local NPM source
 
 ```
 npm install -g verdaccio
 verdaccio
 ```
 
-Modify file
+## modify file
 
-```
-npm run per
-git commit -m 'xxx'
-lerna publish
-```
+1. npm run per
+2. git commit -am 'xxx'
+3. lerna publish
+   ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5496d2d8d3ba4aba99e92d74667809ed~tplv-k3u1fbpfcp-watermark.image?)
