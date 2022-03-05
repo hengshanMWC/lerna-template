@@ -17,6 +17,8 @@ npm install -g verdaccio
 verdaccio
 ```
 
+Of course, if you want to use it formally, please modify it `.npmrc`
+
 ## modify file
 
 1. npm run per
