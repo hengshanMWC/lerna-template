@@ -1,10 +1,6 @@
 {
   "name": "@test/c",
-<<<<<<< HEAD
   "version": "5.0.3",
-=======
-  "version": "0.0.1",
->>>>>>> main
   "description": "> TODO: description",
   "author": "mawencan <1044926436@qq.com>",
   "homepage": "https://github.com/hengshanMWC/lerna-template#readme",
