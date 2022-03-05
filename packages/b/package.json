@@ -31,11 +31,7 @@
     "url": "https://github.com/hengshanMWC/lerna-template/issues"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@test/a": "^5.0.3"
-=======
-    "@test/a": "^0.0.1"
->>>>>>> main
   },
   "gitHead": "fad06a6a2f45365be99f75e2b107c6733fe9a770"
 }
