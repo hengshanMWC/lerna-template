@@ -12,7 +12,8 @@
     "build": "npm-run-all build:a build:b build:c",
     "build:a": "cd packages/a && yarn build",
     "build:b": "cd packages/b && yarn build",
-    "build:c": "cd packages/c && yarn build"
+    "build:c": "cd packages/c && yarn build",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
@@ -30,8 +31,10 @@
     "babel-jest": "^27.5.1",
     "camelcase": "^6.3.0",
     "eslint": "^8.9.0",
+    "husky": "^7.0.4",
     "jest": "^27.5.1",
     "lerna": "^4.0.0",
+    "lint-staged": "^12.3.4",
     "npm-run-all": "^4.1.5",
     "rollup": "^2.67.3",
     "rollup-plugin-typescript2": "^0.31.2",
