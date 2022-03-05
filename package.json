@@ -13,6 +13,7 @@
     "build:a": "cd packages/a && yarn build",
     "build:b": "cd packages/b && yarn build",
     "build:c": "cd packages/c && yarn build",
+    "lint": "eslint --ext=js,ts,json .",
     "prepare": "husky install"
   },
   "devDependencies": {
