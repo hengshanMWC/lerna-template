@@ -19,6 +19,8 @@ verdaccio
 
 Of course, if you want to use it formally, please modify it `.npmrc`
 
+If you want some of the packages to specify NPM source, you can modify the package Publishconfig. JSON registry
+
 ## modify file
 
 1. npm run per
