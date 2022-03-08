@@ -1,3 +1,13 @@
+# introduce
+
+lerna + yarn = Monorepo，Support the following functions :package:
+
+- [x] rollup :package:
+- [x] jest :sheep:
+- [x] typescript :alien:
+- [x] husky :ghost:
+- [x] eslint :flashlight:
+
 # init
 
 ```
