@@ -13,7 +13,7 @@
     "docs:serve": "vitepress serve docs",
     "build": "lerna run build",
     "version": "lerna version",
-    "publish": "lerna publish from-package --loglevel=silly --force-publish --yes --registry=http://artifactory.gz.cvte.cn/artifactory/api/npm/cvte-npm-registry/",
+    "publish": "lerna publish --registry=http://artifactory.gz.cvte.cn/artifactory/api/npm/cvte-npm-registry/",
     "release": "esno ./scripts/release"
   },
   "devDependencies": {
